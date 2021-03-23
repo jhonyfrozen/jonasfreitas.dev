@@ -6,16 +6,11 @@ import { stripTags, domHtml } from '../../../utils/stripTags';
 import SEO from '../../Seo';
 
 const pageText = {
-  paraOne: `Hello !! My name is Rolwin Reevan Monteiro. I'm a full stack web developer who is
-    passionate about various web technologies. I like to experiment with different web
-    technologies. I have an experience of nearly 3 years working with LAMP stack, MERN stack
-    and ELK stack. Building fancy UI's just like this one that your seeing 😅 and writing blogs about tech stacks
-    is what Rolwin loves to do. Check my blog which I update every week for some Javascript and some
-    cool notes on web technologies.`,
-  paraTwo: `Currently I work mostly with Javascript technologies like ReactJS and NodeJS. I also
-    have hands on experience working with cloud infrastructures like <b>AWS/GCP</b> and have deployed applications
-    keeping scalability in mind. Docker, Kubernetes, Jenkins, SonarQube are some of the cool
-    tools I use for <b>CI/ CD</b>. I'm always a learner and a self taught programmer.`,
+
+  paraOne: `Olá!! Me chamo Jonas Freitas. Sou um desenvolvedor web/desktop fullstack que é
+  apaixonado por várias tecnologias web. Eu gosto de experimentar diferentes
+  tecnologias. Tenho uma experiência de mais de 10 anos de desenvolvimento, aonde tive contato com várias linguagens e frameworks.`,
+  paraTwo: `Meu foco atual está sobre javascript com NodeJs, Vuejs e ReactJs.`,
 };
 
 const AboutMe = () => {
@@ -27,9 +22,9 @@ const AboutMe = () => {
           title="About"
           description={description}
           path=""
-          keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
+          keywords={['Jonas', 'Freitas', 'Rio das Ostras', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'VueJs']}
         />
-        <h1 className="titleSeparate">About Me</h1>
+        <h1 className="titleSeparate">Sobre mim</h1>
         <p>
           {pageText.paraOne}
         </p>
@@ -41,45 +36,45 @@ const AboutMe = () => {
             img="location.png"
             height={60}
             alt="location image"
-            textH4="Born and bought up in"
-            textH3="Mangalore, KA, India"
+            textH4="De Petrópolis - RJ"
+            textH3="Em Rio das Ostras -RJ"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="coffee.png"
             alt="coffee image"
-            textH4="Love Coffee"
-            textH3="Coffee + Me = Happiness"
+            textH4="Café"
+            textH3="Café + Eu = Acordado"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="meeting.png"
             alt="meeting image"
-            textH4="Socially Awkward"
-            textH3="At times"
+            textH4="Socialmente desajeitado"
+            textH3="Às vezes"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="motorcycle.png"
             alt="motorcycle image"
-            textH4="Love Riding"
-            textH3="Biker for life"
+            textH4="Amo pedalar"
+            textH3="Pedalar = menos sedentário"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="web.png"
             alt="web image"
-            textH4="Self Taught Programmer"
-            textH3="Thanks to the Web Resources"
+            textH4="Autodidata"
+            textH3="Graças aos Livros e Documentações"
             height={60}
             width={60}
           />
         </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        {/* <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="graduation.png"
             alt="graduation image"
@@ -88,7 +83,7 @@ const AboutMe = () => {
             height={60}
             width={60}
           />
-        </Col>
+        </Col> */}
       </Row>
     </>
   );
